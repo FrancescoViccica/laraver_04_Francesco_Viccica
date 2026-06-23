@@ -23,3 +23,7 @@ Route::get('/merch/dettaglio-articoli/{id}', [MerchController::class, 'dettaglio
 
 // rotta mail
 Route::post('/contatti/send', [PublicController::class, 'send_email'])->name('send_email');
+
+Route::get('/merch/create', [MerchController::class, 'create'])->name('merch.create');
+
+Route::post('/merch/submit', [MerchController::class, 'store'])->name('merch.submit');
